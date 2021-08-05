@@ -21,8 +21,15 @@ video {
 
 .jb-text {
     
-    position: absolute;
-    top: 20%;
+    position: fixed;
+    top: 15%;
+    width: 100%;
+}
+
+.jk-text {
+    
+    position: fixed;
+    top: 24%;
     width: 100%;
 }
 
@@ -30,7 +37,7 @@ video {
     
     margin-top: -24px;
     text-align: center;
-    font-size: 86px;
+    font-size: 150px;
     color: #c51010;
     
 }
