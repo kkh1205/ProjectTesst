@@ -2,8 +2,10 @@
 
 /*sm.폰트적용*/
 @font-face {
-  font-family: 'exfont';
-  src: url(../font/MaruBuri-Regular.ttf);
+  font-family: 'Eulyoo1945-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
  /*sm.요소 중앙정렬*/
@@ -14,10 +16,15 @@
  * sm.햄버거 버튼용 css 라이브러리 작성 시작
  */
   html,body {
-    font-family: 'exfont'; /*sm.폰트적용*/
+
+    background-color: #FFFFFF;
+    font-family: Eulyoo1945-SemiBold;
 
      height: 100%;
  } 
+ body{
+   position: relative;
+ }
 
 
 .menu {
@@ -29,7 +36,7 @@
 
     transition: 0.5s ease;
     z-index: 3;
-    background-color: #FEFFE2;
+    background-color: #888888;
   }
   
   .burger-icon {
@@ -104,18 +111,8 @@
  /*!
  * sm.슬라이더 이미지용 css
  */
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
 
-  body {
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
+
   .swiper-container {
     width: 100%;
     height: 300px;
@@ -124,7 +121,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fafafa;
+    background: #FFFFFF;
     
 
     /* Center slide text vertically */
@@ -146,14 +143,14 @@
   /* sm.플로팅 배너용 css 끝*/
 
   .sideBanner {
-  position: relative;
-
+  position: fixed;
+  clear: right;
   width: 150px;
   height: 200px;
-  top: 50px;
+  top: 600px;
   background-color: crimson;
   color: azure;
   z-index: 6;
-  float: right;
+  
   }
   /* sm.플로팅 배너용 css 끝*/

@@ -7414,8 +7414,8 @@ textarea.form-control-lg {
   background-color: #dc3545 !important;
 }
 
-.bg-light {
-  background-color: #f8f9fa !important;
+.bg-light {/*sm.색상수정됨*/
+  background-color: #FFE8DF !important;
 }
 
 .bg-dark {
