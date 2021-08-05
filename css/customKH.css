@@ -20,7 +20,6 @@ body {
 
 header {
   position: relative;
-  overflow: hidden;
 }
 
 .title h1{
@@ -29,6 +28,10 @@ header {
 }
 .title div{
   font-size: 17px;
+  display: block;
+  width: 300px;
+  margin: auto;
+  text-align: center;
 }
 
 #fst{
