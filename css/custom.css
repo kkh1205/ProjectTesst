@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/*sm.폰트적용*/
+@font-face {
+  font-family: 'exfont';
+  src: url(../font/MaruBuri-Regular.ttf);
+}
+
+ /*sm.요소 중앙정렬*/
+  .centered { display: table; margin-left: auto; margin-right: auto; } 
+
+
+/*!
+ * sm.햄버거 버튼용 css 라이브러리 작성 시작
+ */
+  html,body {
+    font-family: 'exfont'; /*sm.폰트적용*/
+
+     height: 100%;
+ } 
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 200%;
+    max-width: 0px;
+
+    transition: 0.5s ease;
+    z-index: 3;
+    background-color: #FEFFE2;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 4;
+    padding: 20px;
+    top: 4px;
+    right: 4px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+  }
+  
+  .burger-icon .burger-sticks {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+  }
+  
+  .burger-icon .burger-sticks:before,
+  .burger-icon .burger-sticks:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .burger-icon .burger-sticks:before {
+    top: 5px;
+  }
+  
+  .burger-icon .burger-sticks:after {
+    top: -5px;
+  }
+  
+  .burger-check {
+    display: none;
+  }
+  
+  .burger-check:checked~.menu {
+    max-width: 500px;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks {
+    background: transparent;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:before {
+    transform: rotate(-45deg);
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:after {
+    transform: rotate(45deg);
+  }
+  
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+    top: 0;
+  }
+/*!
+ * sm.햄버거 버튼용 css 라이브러리 작성 끝
+ */
+
+ /*!
+ * sm.슬라이더 이미지용 css
+ */
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fafafa;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  /* sm.슬라이더 이미지용 css 끝
