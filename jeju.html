@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,18 @@
     <link rel="stylesheet" href="css/animate.css">
     <!--sm.본문 효과용 css class 따로 정리해둔 것-->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- sm. 슬라이더 라이브러리  -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- sm. 참조될 라이브러리들(css)  -->
 
-    
+
+
 
 </head>
+
 <body>
-    <!--sm. 사이드 햄버거 호출-->
+    <!--sm. 사이드 햄버거 호출 및 사이드 메뉴-->
     <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon" for="burger-check"><span
             class="burger-sticks"></span></label>
     <div class="menu">
@@ -38,32 +44,47 @@
     </nav>
 
 
-        <div class="row">
-            <p></p>
-            <h1 class="animate__animated animate__fadeInDown text-center">제 주</h1>
-            <p></p>
-        
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">    
+                    <article class="centered animate__animated animate__fadeInDown">
+                <img class="animate__animated animate__fadeInDown" src="images/jeju/03.jpg">
+            </article></div>
+            <div class="swiper-slide">
+                <article class="col-xs-3 animate__animated animate__fadeInDown">
+                    <img class="animate__animated animate__fadeInDown" src="images/jeju/29.jpg">
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="col-xs-6 animate__animated animate__fadeInDown">
+                    <img class="animate__animated animate__fadeInDown" src="images/jeju/39.jpg">
+                </article>
+            </div>
+            ...
         </div>
-<div>
-        <article class="centered animate__animated animate__fadeInDown">
-            <img class="animate__animated animate__fadeInDown" src="images/jeju/03.jpg">
-            <p>내용뭐라고적지이이이이이이이</p>
-        </article>
     </div>
-        
-        <article class="col-xs-3 animate__animated animate__fadeInDown">
-            <img class="animate__animated animate__fadeInDown" src="images/jeju/29.jpg">
-        </article>
-        <article class="col-xs-6 animate__animated animate__fadeInDown">
-            <img class="animate__animated animate__fadeInDown" src="images/jeju/39.jpg">
-        </article>
-        <article class="col-xs-6 animate__animated animate__fadeInDown">
-            <img class="animate__animated animate__fadeInDown" src="images/jeju/49.jpg">
-        </article>
-        <article class="col-xs-6 animate__animated animate__fadeInDown">
-            <img class="animate__animated animate__fadeInDown" src="images/jeju/64.jpg">
-        </article>
-        
+
+
+    <div class="row">
+        <p></p>
+        <h1 class="animate__animated animate__fadeInDown text-center">제 주</h1>
+        <p></p>
+
+    </div>
+    <div>
+
+    </div>
+
+
+
+    <article class="col-xs-6 animate__animated animate__fadeInDown">
+        <img class="animate__animated animate__fadeInDown" src="images/jeju/49.jpg">
+    </article>
+    <article class="col-xs-6 animate__animated animate__fadeInDown">
+        <img class="animate__animated animate__fadeInDown" src="images/jeju/64.jpg">
+    </article>
+
 
 
 
@@ -74,6 +95,9 @@
     <!-- sm. 참조될 라이브러리들(js)  -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/costom.js"></script>
     <!-- sm. 참조될 라이브러리들(js)  -->
 </body>
+
 </html>
