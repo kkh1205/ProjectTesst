@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>font style</title>
+ 
+        <style type="text/css">
+            /* 폰트 글꼴 */
+            p{font-family: "Cooper Black", serif;}
+            p{font-family: "휴먼옛체", sans-serif;}
+            p{font-family: fantasy;}
+            p{font-family: cursive;}
+            p{font-family: monospace;}
+ 
+            /* 웹폰트 : 별도의 ttf,otf 폰트파일로 폰트 지정 */
+            /* 브라우저의 영향이 없는 글꼴지정 방식 */
+ 
+            /* 웹폰트 등록 문법 */
+            @font-face {
+                font-family: "My Font"; /* 임의로 폰트 이름  */
+                src: url("./CookieRun Black.otf");
+            }
+ 
+            /* 위에서 만들어진 웹폰트를 p요소에 적용하기 */
+            p{font-family: "My Font", serif;}
+ 
+            /* 폰트 크기 */
+            p{font-size: 30px;}
+            p{font-size: 2.5em;} /* em배율 2.5배 */
+ 
+            /* bold, normal , 100~ 900두께 */
+            p{font-weight: bold;}
+ 
+            /* italic */
+            p{font-style: italic;}
+ 
+            /* 위 4개의 폰트관련 속성을 한번에 설정하기 */
+            /* 작성 순서 [weight/ style] size family */
+            p{font: italic bold 400% "휴먼옛체",serif;} /* 띄어쓰기로 구분 */
+ 
+        </style>
+    </head>
+    <body>
+        <p>Hello world</p>
+        <p>한글은 어떠한가?</p>
+    </body>
+</html>
+ 
