@@ -3,9 +3,9 @@
 /*sm.폰트적용*/
 @font-face {
     font-family: 'exfont';
-    src: url(../font/MaruBuri-Regular.ttf);
+    src: url(../font/NanumPen.ttf);
 }
-
+font-family: 'Nanum Myeongjo', serif;
 
  /*sm.요소 중앙정렬*/
   .centered { display: table; margin-left: auto; margin-right: auto; } 
@@ -16,8 +16,11 @@
  */
   html,body {
      height: 100%;
-     font-family: 'exfont'; /*sm.폰트적용*/
  } 
+ body{
+
+     font-family: 'exfont'; /*sm.폰트적용*/
+ }
 
 .menu {
     position: absolute;
