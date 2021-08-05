@@ -141,4 +141,19 @@
     -webkit-align-items: center;
     align-items: center;
   }
-  /* sm.슬라이더 이미지용 css 끝
+  /* sm.슬라이더 이미지용 css 끝*/
+
+  /* sm.플로팅 배너용 css 끝*/
+
+  .sideBanner {
+  position: relative;
+
+  width: 150px;
+  height: 200px;
+  top: 50px;
+  background-color: crimson;
+  color: azure;
+  z-index: 6;
+  float: right;
+  }
+  /* sm.플로팅 배너용 css 끝*/
