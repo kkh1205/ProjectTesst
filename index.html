@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,43 +7,68 @@
     <link rel="stylesheet" href="css/jhbackground.css">
     <title></title>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- sm. 참조될 라이브러리들(css)  -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- sm. 참조될 라이브러리들(css)  -->
-    <!-- <style>
-        @font-face {
-        font-family: 'exfont';
-        src: url(../font/MaruBuri-Regular.ttf);
-        }
-    </style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+
 </head>
 
 <body>
 
+    <div class="jb-text text-center animate__animated animate__fadeInDown" style="font-family: serif;">
+        <h1 style="font-size: 1.5cm;">Кыргыз Республикасы </h1>
 
-
-    
-    
-    <div class="jb-box">
-        <video muted autoplay loop>
-            <source src="img/123.mp4" type="video/mp4">
-            <strong>Your browser does not support the video tag.</strong>
-        </video>
     </div>
-        <div class="jb-text text-center animate__animated animate__fadeInDown" style="font-family: serif;"> 
-                <h1 style="font-size: 1.5cm;">Кыргыз Республикасы </h1> 
-                
-         </div>
-        <div class="jk-text text-center animate__animated animate__delay-1s animate__fadeInUp " style="font-family: serif;"> 
-            
-            <h1 style="font-size: 1cm;"> 키르키즈스탄 </h1>
-        </div>  
-             
-         
+    <div class="jk-text text-center animate__animated animate__delay-1s animate__fadeInUp " style="font-family: serif;">
 
-    
+        <h1 style="font-size: 1cm;"> 키 르 키 즈 스 탄 </h1>
+    </div>
+
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function(index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
