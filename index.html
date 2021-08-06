@@ -7,8 +7,10 @@
 
 
     <!-- sm. 참조될 라이브러리들(css)  -->
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- swiper(탭슬라이드용 css) -->
+    <link rel="stylesheet" href="css/swiper.css">
     <!-- 커스텀 CSS(KH) 폰트 여기다가 적용시켜놨음 -->
     <link rel="stylesheet" href="css/customKH.css">
     <!-- sm. 참조될 라이브러리들(css)  -->
@@ -32,8 +34,82 @@
     <section>
         <!-- 탭컨텐츠 -->
         <article>
-            
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <input type="radio" name="slide" id="slide05">
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/히메지성.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/교토.jfif">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/analog.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/오다이바 빅사이트.jfif">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/여기 어디더라.jpg">
+                            </a>
+                        </li>
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide05" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide04" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide05" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide04" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide01"></label></li>
+                        <li><label for="slide02"></label></li>
+                        <li><label for="slide03"></label></li>
+                        <li><label for="slide04"></label></li>
+                        <li><label for="slide05"></label></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
         </article>
+        
         <!-- 본문 -->
         <article>
 
@@ -72,6 +148,8 @@
     <!-- sm. 참조될 라이브러리들(js)  -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <!-- 탭슬라이드 써야하니 swiper 참조 -->
+    <script src="js/swiper.js"></script>
     <!-- sm. 참조될 라이브러리들(js)  -->
 </body>
 </html>
