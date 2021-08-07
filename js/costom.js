@@ -34,3 +34,15 @@
       }, 500);
   
   }).scroll();
+
+
+
+  $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.animate__fadeInUp').each( function(i){
+            
+
+            
+        }); 
+    });
+});
