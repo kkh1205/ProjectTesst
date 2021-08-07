@@ -100,13 +100,13 @@
 
     <!--sm. 플로팅배너 적용 -->
     <div class="sideBanner">
-        <button type="button" class="btn btn-danger float-right">
+        <button id="taste" type="button" class="btn btn-danger float-right" onclick="location.href = '#movingtaste';"><!--버튼에 ID추적이동 링크걸기-->
             <h1>맛</h1>>
         </button>
-        <button type="button" class="btn btn-warning float-right">
+        <button id="ganji" type="button" class="btn btn-warning float-right" onclick="location.href = '#movingganji';">
             <h1>멋</h1>>
         </button>
-        <button type="button" class="btn btn-primary float-right">
+        <button id="rest" type="button" class="btn btn-primary float-right" onclick="location.href = '#movingrest';">
             <h1>쉼</h1>>
         </button>
     </div>
@@ -129,7 +129,7 @@
 
 
     <!--sm. 맛 키워드 표시 상자, 경고상자 양식 적용-->
-    <div class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
+    <div id = "movingtaste" class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
         <div class="alert alert-secondary col-3" style="float: none; margin:0 auto;">
             <div class="text-center">
                 <h1> ' 맛 '</h1>
@@ -230,8 +230,8 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-
-        <div class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
+<!--sm. 멋 키워드 표시 상자, 경고상자 양식 적용-->
+<div id="movingganji" class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
             <div class="alert alert-secondary col-3" style="float: none; margin:0 auto;">
                 <div class="text-center">
                     <h1> ' 멋 '</h1>
@@ -357,8 +357,9 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+<!--sm. 쉼 키워드 표시 상자, 경고상자 양식 적용-->
 
-        <div class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
+        <div id="movingrest" class="container-fluid row animate__animated animate__fadeInUp" style="float: none; margin:100 auto;">
             <div class="alert alert-secondary col-3" style="float: none; margin:0 auto;">
                 <div class="text-center">
                     <h1> ' 쉼 '</h1>
@@ -385,7 +386,7 @@
                 <!--sm. 창 large 사이즈일때 4col 사용 미디움은 6col, 태블릿 및 모바일 사이즈에는 세로표기-->
 
                 <figure>
-                    <img src="images/jeju/rest1.jpg" class="img-fluid">
+                    <img src="images/jeju/rest2.jpg" class="img-fluid">
                 </figure>
 
             </div>
@@ -440,7 +441,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <!--sm. 창 large 사이즈일때 4col 사용 미디움은 6col, 태블릿 및 모바일 사이즈에는 세로표기-->
                 <figure>
-                    <img src="images/jeju/rest2.jpg" class="img-fluid">
+                    <img src="images/jeju/rest1.jpg" class="img-fluid">
                 </figure>
 
             </div>
