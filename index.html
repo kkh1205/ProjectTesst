@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/jhbackground.css">
     <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- sm. 참조될 라이브러리들(css)  -->
@@ -31,52 +36,46 @@
         <h1 style="font-size: 1cm;"> 키르키즈스탄  </h1>
     </div>
 
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+    <div class="rp1 animate__animated animate__delay-2s animate__fadeInUp">맛</div>
+    <div class="rp2 animate__animated animate__delay-2s animate__fadeInUp">멋</div>
+    <div class="rp3 animate__animated animate__delay-2s animate__fadeInUp">쉼</div>
+
+
+    <div class="swiper-container animate__animated animate__delay-2s animate__fadeInLeft">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="img/mat1.jpg"></div>
+            <div class="swiper-slide"><img src="img/mat2.jpg"></div>
+            <div class="swiper-slide"><img src="img/mat3.jpg"></div>
+            <div class="swiper-slide"><img src="img/beshbarmakmat.jpg"></div>
+            <div class="swiper-slide"><img src="img/kebabmat.jpg"></div>
+            <div class="swiper-slide"><img src="img/shropowmat.jpg"></div>
+            
         </div>
+    
+        
+    
+        <!-- 페이징 -->
         <div class="swiper-pagination"></div>
     </div>
+    
 
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function(index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-            },
-        });
+        new Swiper( '.swiper-container', {
+
+    effect : 'fade', // 페이드 효과 사용
+
+    loop : true, // 무한 반복
+    pagination : { // 페이징 설정
+    el : '.swiper-pagination',
+    clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+    },
+    navigation : { // 네비게이션 설정
+    nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+    prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+    },
+    });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <!-- sm. 참조될 라이브러리들(js)  -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
