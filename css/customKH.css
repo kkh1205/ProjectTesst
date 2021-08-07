@@ -42,11 +42,11 @@ header {
 }
 
 /* 본문시작 */
-
-.mainContents {
+section {
   position: relative;
   overflow: hidden;
 }
+
 .mainContents article {
   display: inline-block;
 }
@@ -286,4 +286,22 @@ header {
   text-align: left;
   margin-right: 1em;
   font-size: 1.8vw;
+}
+
+/* -------- 맛,멋,쉼 버튼 -------- */
+
+.id_linkMenu {
+  border: 1px solid red;
+  position: fixed;
+  bottom: 5%;
+  right: 0%;
+}
+
+.id_linkMenu>div {
+  display: inline-block;
+  border: 1px solid #000;
+  width: 5em;
+  height: 50px;
+  text-align: center;
+  padding-top: 5%;
 }
