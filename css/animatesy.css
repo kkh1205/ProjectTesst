@@ -160,8 +160,8 @@
  }
 
  .centered { 
-            width: 100px;
-            margin: 100px auto;
+           
+            margin: auto;
             text-align: center;
 
 }
@@ -171,41 +171,45 @@
     src: url('../Cafe24Oneprettynight.ttf');
 }
 
-h1 {
+body {
     font-family: "cafe";
-    font-size: 50px;
+}
+
+h1 {
+    
+    font-size: 100px;
 }
 
 p {
-    font-family: "cafe";
-    font-size: 50px;
+
+    font-size: 10px;
 }
 
 .box1 {
     position: fixed;
     bottom: 50%;
-    right:5%;
+    right:10%;
     background:paleturquoise;
     
 }
 
 .box2 {
     display: inline-block;
-    background:paleturquoise;
+    
     width: 100px;
     height: 100px;
 }
 
 .box3 {
     display: inline-block;
-    background:paleturquoise;
+    
     width: 100px;
     height: 100px;
 }
 
 .box4 {
     display: inline-block;
-    background:paleturquoise;
+    
     width: 100px;
     height: 100px;
 }
