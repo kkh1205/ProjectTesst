@@ -114,7 +114,7 @@
 
 
   .swiper-container {
-    width: 100%;
+    width: 90%;
     height: 300px;
   }
 
@@ -140,10 +140,10 @@
   }
   /* sm.슬라이더 이미지용 css 끝*/
 
-  /* sm.플로팅 배너용 css 끝*/
+  /* sm.플로팅 배너용 css 시작*/
 
   .sideBanner {
-  position: fixed;
+  position: absolute;
   right: 5px;
   width: 230px;
   height: 200px;
