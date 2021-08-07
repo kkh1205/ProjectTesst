@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animatesy.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <!-- sm. 참조될 라이브러리들(css)  -->
 
 
@@ -31,35 +32,82 @@
             
         </div> 
     </header>
+
+
+
+    <!-- 슬라이드 부분-->
+    <section> 
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <div class="slidewrap">
+            
+            <ul class="slidelist">
+                <!-- 슬라이드 영역 -->
+                <li class="slideitem">
+                    <a>
+                        
+                      
+                        <img src="img/bigben.jpg">
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+                        
+                        <img src="img/son.jpg">
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+                        
+                        <img src="img/london.jpg">
+                    </a>
+                </li class="slideitem">
+
+                <!-- 좌,우 슬라이드 버튼 -->
+                <div class="slide-control">
+                    <div>
+                        <label for="slide03" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                    </div>
+                    <div>
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                    </div>
+                    <div>
+                        <label for="slide02" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                    </div>
+                </div>
+
+            </ul>
+            <!-- 페이징 -->
+            <ul class="slide-pagelist">
+                <li><label for="slide01"></label></li>
+                <li><label for="slide02"></label></li>
+                <li><label for="slide03"></label></li>
+            </ul>
+        </div>
+     </section> 
      
-    <section>
-        <article>
-            <div class="animate__animated animate__fadeInLeft">
-                <img src="img/son.JPG" alt="소니세리머니" width="40%" style="float: left;">
-        </article>
-
-        <article>
-            <span class="box1">
-                <span class="box2">
-                    <p>맛</p>
-                </span>
-
-                <span class="box3">
-                    <p>멋</p>
-                </span>
-
-                <span class="box4">
-                    <p>쉼</p>
-                </span>
-
+     <!-- 맛멋쉼 -->
+     <article>
+        <span class="box1">
+            <span class="box2">
+                <p>맛</p>
             </span>
-        </article>
-    </section>
-        
-     <section>
-  
 
-     </section>   
+            <span class="box3">
+                <p>멋</p>
+            </span>
+
+            <span class="box4">
+                <p>쉼</p>
+            </span>
+
+        </span>
+    </article>
 
        
     
