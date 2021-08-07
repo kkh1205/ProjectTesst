@@ -42,6 +42,25 @@ header {
   animation-delay: 1s;
 }
 
+/* 본문시작 */
+
+.mainContents {
+  position: relative;
+  overflow: hidden;
+}
+.mainContents article {
+  display: inline-block;
+}
+
+/* ----------- 탭슬라이드 시작 ------------ */
+
+.tabSlide {
+  float: left;
+  width: 45%;
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,9 +71,7 @@ header {
 }
 
 .section .slidewrap {
-  max-width: 45%;
-  margin-top: 3em;
-  margin-left: 2em;
+  max-width: 100%;
 }
 
 .section .slidelist {
@@ -180,13 +197,13 @@ header {
 }
 
 .section .left {
-  left: 30px;
+  left: 0px;
   background: url('./slide/left.png') center center / 100% no-repeat;
   opacity: 0.7;
 }
 
 .section .right {
-  right: 30px;
+  right: 0px;
   background: url('./slide/right.png') center center / 100% no-repeat;
   opacity: 0.7;
 }
@@ -249,4 +266,17 @@ header {
 
 .section input[id="slide05"]:checked~.slidewrap .slide-pagelist>li:nth-child(5)>label {
   background: #999;
+}
+
+/* -----------본문 시작 ------------ */
+
+.mainTextBox {
+  float: right;
+  width: 45%;
+  border: 1px solid #000;
+}
+
+.mainText {
+  text-align: right;
+  margin-right: 4%;
 }
