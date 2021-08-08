@@ -87,11 +87,32 @@ video {
     
     
 }
+
+.swiper-container2 {
+    float: right;
+    position: fixed;
+    right: 200px;
+    top: 1000px;
+    
+    width:640px;
+    height:420px;
+    
+    
+}
 .swiper-slide {
     
     
     display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
     align-items:left; /* 위아래 기준 중앙정렬 */
     justify-content:left; /* 좌우 기준 중앙정렬 */
+}
+
+.text1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    position: absolute; 
+    right: 1000px;
+    top:500px;
 }
 

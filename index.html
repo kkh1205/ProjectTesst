@@ -55,6 +55,28 @@
         
     
         <!-- 페이징 -->
+        <div class="swiper-pagination "></div>
+    </div>
+    <div class="text1 animate__animated animate__delay-2s animate__fadeInUp" style="font-family: serif;">
+        <p>키르키즈스탄에서는 전통 빵을 주식으로 먹거나</p> 
+        <p>양고기를 이용한 샤슬릭을 먹습니다</p>
+
+    </div>
+
+    <div class="swiper-container2 animate__animated animate__delay-2s animate__fadeInLeft">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="img/mut1.jpg"></div>
+            <div class="swiper-slide"><img src="img/mut2.jpg"></div>
+            <div class="swiper-slide"><img src="img/mut3.jpg"></div>
+            <div class="swiper-slide"><img src="img/mut4.jpg"></div>
+            <div class="swiper-slide"><img src="img/mut5.jpg"></div>
+            
+            
+        </div>
+    
+        
+    
+        <!-- 페이징 -->
         <div class="swiper-pagination"></div>
     </div>
     
@@ -75,6 +97,23 @@
     },
     });
     </script>
+
+<script>
+    new Swiper( '.swiper-container2', {
+
+effect : 'fade', // 페이드 효과 사용
+
+loop : true, // 무한 반복
+pagination : { // 페이징 설정
+el : '.swiper-pagination',
+clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+},
+navigation : { // 네비게이션 설정
+nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+},
+});
+</script>
     
     <!-- sm. 참조될 라이브러리들(js)  -->
     <script src="js/jquery-3.6.0.min.js"></script>
