@@ -25,22 +25,22 @@
 
 </head>
 
-<body>
+<body style="background-color: rgb(250, 219, 135);">
 
     <div class="jb-text text-center animate__animated animate__fadeInDown" style="font-family: serif;">
         <h1 style="font-size: 1.5cm;">Кыргыз Республикасы </h1>
 
     </div>
-    <div class="jk-text text-center animate__animated animate__delay-1s animate__fadeInUp " style="font-family: serif;">
+    <div class="jk-text text-center animate__animated animate__delay-1s animate__fadeInUp p1" >
 
-        <h1 style="font-size: 1cm;"> 키르키즈스탄  </h1>
+        <h1 style="font-size: 1cm; "> 키르키즈스탄  </h1>
     </div>
 
     <div class="rp1 animate__animated animate__delay-2s animate__fadeInUp">맛</div>
     <div class="rp2 animate__animated animate__delay-2s animate__fadeInUp">멋</div>
     <div class="rp3 animate__animated animate__delay-2s animate__fadeInUp">쉼</div>
 
-
+<!-- 맛 부분 이미지, 그림 jh -->
     <div class="swiper-container animate__animated animate__delay-2s animate__fadeInLeft">
         <div class="swiper-wrapper ">
             <div class="swiper-slide"><img src="img/mat1.jpg"></div>
@@ -50,23 +50,24 @@
             <div class="swiper-slide"><img src="img/kebabmat.jpg"></div>
             <div class="swiper-slide"><img src="img/shropowmat.jpg"></div>
             
-        </div>
-    
-        
-    
+        </div>  
         <!-- 페이징 -->
         <div class="swiper-pagination "></div>
     </div>
-    <div class="text1 animate__animated animate__delay-2s animate__fadeInUp" style="font-family: serif;">
+    <div class="text1 animate__animated animate__delay-2s animate__fadeInUp p ">
         <p>키르키즈스탄에서는 전통 빵을 주식으로 먹거나</p> 
         <p>양고기를 이용한 샤슬릭을 먹습니다</p>
+        <p> &nbsp; </p>
+        <p>4번째 사진은 고기와 수제비를 이용한 음식인데요</p>
+        <p>이 음식은 고기가 메인이고 면이 서브입니다</p>
+        <p>너무 좋앙</p>
 
     </div>
-
-    <div class="swiper-container2 animate__animated animate__delay-2s animate__fadeInLeft">
+<!-- 멋 부분 이미지, 그림 jh -->   
+    <div class="swiper-container2 animate__animated animate__delay-2s animate__fadeInRight">
         <div class="swiper-wrapper ">
             <div class="swiper-slide"><img src="img/mut1.jpg"></div>
-            <div class="swiper-slide"><img src="img/mut2.jpg"></div>
+            <div class="swiper-slide"><img src="img/mut2.PNG"></div>
             <div class="swiper-slide"><img src="img/mut3.jpg"></div>
             <div class="swiper-slide"><img src="img/mut4.jpg"></div>
             <div class="swiper-slide"><img src="img/mut5.jpg"></div>
@@ -79,6 +80,48 @@
         <!-- 페이징 -->
         <div class="swiper-pagination"></div>
     </div>
+
+    <div class="text2 animate__animated animate__delay-2s animate__fadeInUp p ">
+        <p>키르키즈스탄은 우리나라와 비슷하면서도 </p> 
+        <p>산간지방과 넓은 초원이 있습니다 (양 : 앙 개꿀띠)</p>
+        <p> &nbsp; </p>
+        <p>또한 수도인 비쉬케크에는 </p>
+        <p>알라 토 광장이 있습니다</p>
+        <p> &nbsp; </p>
+        <p>멋진 건축물들 갬성이 아주 좋아영</p>
+
+    </div>
+
+    <!-- 쉼 부분 이미지, 그림 jh -->   
+    <div class="swiper-container3 animate__animated animate__delay-2s animate__fadeInRight">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="img/sarm.jpg"></div>
+            <div class="swiper-slide"><img src="img/sarm2.jpg"></div>
+            <div class="swiper-slide"><img src="img/sarm3.jpg"></div>
+            
+            
+        </div>
+        <p> &nbsp; </p>
+        <p> &nbsp; </p>
+        <p> &nbsp; </p>
+        <p> &nbsp; </p>
+        
+        <!-- 페이징 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="text3 animate__animated animate__delay-2s animate__fadeInUp p ">
+        <p>키르키즈스탄은 본래 유목생활을 </p> 
+        <p>해오면서 터전을 가꾸었습니다 (양 : 앙 살려줘)</p>
+        <p> &nbsp; </p>
+        <p>수도에는 이렇게크게 시장이 형성 되어있습니다</p>
+        <p> &nbsp; </p>
+        <p>또한 우리나라와 비교해서 평지기준 700m 정도 차이가 나기때문에</p>
+        <p>공기가 존나 맑습니다</p>
+
+    </div>
+
+
     
 
     <script>
@@ -100,6 +143,23 @@
 
 <script>
     new Swiper( '.swiper-container2', {
+
+effect : 'fade', // 페이드 효과 사용
+
+loop : true, // 무한 반복
+pagination : { // 페이징 설정
+el : '.swiper-pagination',
+clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+},
+navigation : { // 네비게이션 설정
+nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+},
+});
+</script>
+
+<script>
+    new Swiper( '.swiper-container3', {
 
 effect : 'fade', // 페이드 효과 사용
 
