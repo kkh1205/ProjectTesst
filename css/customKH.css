@@ -314,13 +314,22 @@ section {
   font-size: 6vw;
 }
 
-
+/* --------- 맛 사진 -------- */
 .OsakaPicture {
-  margin-top: 4em;
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+.OsakaPicture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .OsakaText {
   font-size: 1.5vw;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 7em;
 }
