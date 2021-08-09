@@ -291,30 +291,26 @@ section {
 /* -------- KH.맛,멋,쉼 버튼 -------- */
 
 .id_linkMenu {
-  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.btn-group {
   position: fixed;
-  bottom: 5%;
   right: 0%;
+  bottom: 5%;
 }
 
-.id_linkMenu>div {
-  display: inline-block;
-  border: 1px solid #000;
-  width: 5em;
-  height: 50px;
-  text-align: center;
-  padding-top: 5%;
-}
-
-/* ----------- 맛 본문 -------------- */
-
+/* ----------- KH.맛 본문 -------------- */
+/* KH.도톤보리 틀 */
 .tasteTitle {
   margin-top: 3em;
   text-align: center;
   font-size: 6vw;
 }
 
-/* --------- 맛 사진 -------- */
+/* KH.도톤보리 사진 */
 .OsakaPicture {
   position: relative;
   overflow: auto;
@@ -326,10 +322,43 @@ section {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-top: 1em;
 }
-
+/*  KH.도톤보리 텍스트 */
 .OsakaText {
   font-size: 1.5vw;
   text-align: center;
-  margin-top: 7em;
+  margin-top: 10em;
+}
+
+/* KH.편의점 음식*/
+.Convenience_Store {
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* KH.편의점 음식 사진 */
+.Convenience_StorePicture {
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.Convenience_StorePicture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1em;
+}
+
+/* KH.편의점 음식 텍스트 */
+.Convenience_StoreText {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 10em;
 }
