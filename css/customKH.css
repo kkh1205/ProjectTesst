@@ -14,7 +14,7 @@
 }
 
 body {
-  /* 폰트적용부분 */
+  /* KH.폰트적용부분 */
   font-family: Eulyoo1945-SemiBold;
 }
 
@@ -24,10 +24,10 @@ header {
 
 .title h1{
   text-align: center;
-  font-size: 4vmax;
+  font-size: 6vw;
 }
 .title div{
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   display: block;
   margin: auto;
   text-align: center;
@@ -41,7 +41,7 @@ header {
   animation-delay: 1s;
 }
 
-/* 본문시작 */
+/* KH.본문시작 */
 section {
   position: relative;
   overflow: hidden;
@@ -51,7 +51,7 @@ section {
   display: inline-block;
 }
 
-/* ----------- 탭슬라이드 시작 ------------ */
+/* ----------- KH.탭슬라이드 시작 ------------ */
 
 .tabSlide {
   float: left;
@@ -110,7 +110,7 @@ section {
   cursor: pointer;
 }
 
-/* 슬라이드 안에 text넣는 기능 */
+/* KH.슬라이드 안에 text넣는 기능 */
 
 /* .section .slidelist .textbox {
   position: absolute;
@@ -138,7 +138,7 @@ section {
   transition: all .5s;
 } */
 
-/* input에 체크되면 슬라이드 효과 */
+/* KH.input에 체크되면 슬라이드 효과 */
 .section input[id="slide01"]:checked~.slidewrap .slidelist>li {
   transform: translateX(0%);
 }
@@ -156,10 +156,10 @@ section {
 }
 
 .section input[id="slide05"]:checked~.slidewrap .slidelist>li {
-  transform: translateX(-402%);
+  transform: translateX(-404%);
 }
 
-/* input에 체크되면 텍스트 효과 */
+/* KH.input에 체크되면 텍스트 효과 */
 .section input[id="slide01"]:checked~.slidewrap li:nth-child(1) .textbox h3 {
   opacity: 1;
   transform: translateY(0);
@@ -196,7 +196,7 @@ section {
   transition-delay: .4s;
 }
 
-/* 좌,우 슬라이드 버튼 */
+/* KH.좌,우 슬라이드 버튼 */
 .slide-control>div {
   display: none;
 }
@@ -233,7 +233,7 @@ section {
   display: block;
 }
 
-/* 페이징 */
+/* KH.페이징 */
 .slide-pagelist {
   text-align: center;
   padding: 10px;
@@ -273,7 +273,7 @@ section {
   background: #999;
 }
 
-/* -----------본문 시작 ------------ */
+/* ----------- KH.본문 시작 ------------ */
 
 .mainTextBox {
   float: right;
@@ -288,7 +288,7 @@ section {
   font-size: 1.8vw;
 }
 
-/* -------- 맛,멋,쉼 버튼 -------- */
+/* -------- KH.맛,멋,쉼 버튼 -------- */
 
 .id_linkMenu {
   border: 1px solid red;
@@ -304,4 +304,23 @@ section {
   height: 50px;
   text-align: center;
   padding-top: 5%;
+}
+
+/* ----------- 맛 본문 -------------- */
+
+.tasteTitle {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 6vw;
+}
+
+
+.OsakaPicture {
+  margin-top: 4em;
+}
+
+.OsakaText {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 4em;
 }
