@@ -68,17 +68,14 @@ video {
     top: 500px;
 }
 
-.swiper-container {}
+.swiper-container {
+    
+}
 
 .swiper-container2 {}
 
 .swiper-container3 {
-    float: left;
-    position: absolute;
-    left: 300px;
-    top: 2200px;
-    width: 640px;
-    height: 420px;
+    
 }
 
 .swiper-slide {
@@ -88,24 +85,21 @@ video {
 }
 
 .text1 {
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    text-align: left;
+    
 }
 
 .text2 {
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    text-align: left;
+    
 }
 
 .text3 {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 1000px;
-    top: 2250px;
+   
 }
 
 @font-face {
@@ -126,4 +120,15 @@ video {
 
 .p1 {
     font-family: "Eulyoo1945-SemiBold", serif;
+}
+
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p2{
+    font-family: "MapoFlowerIsland" , serif;
 }
