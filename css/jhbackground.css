@@ -1,7 +1,6 @@
 body {
     padding: 0px;
     margin: 0px;
-    
 }
 
 .jb-box {
@@ -22,14 +21,10 @@ video {
 }
 
 .jb-text {
-    
-    
     width: 100%;
 }
 
 .jk-text {
-    
-   
     width: 100%;
 }
 
@@ -45,92 +40,72 @@ video {
     top: 30%;
     left: 40px;
 }
+
 .rp1 {
     z-index: 500;
     float: right;
     text-align: center;
-    position: fixed; 
+    position: absolute;
     right: 190px;
-    top:500px;
-    
-    
+    top: 500px;
 }
+
 .rp2 {
     z-index: 500;
     float: right;
     text-align: center;
-    position: fixed; 
+    position: absolute;
     right: 120px;
-    top:500px;
-    
+    top: 500px;
 }
+
 .rp3 {
     z-index: 500;
     float: right;
     text-align: center;
-    position: fixed; 
+    position: absolute;
     right: 50px;
-    top:500px;
-    
-}
-.swiper-container {
-   
-   
+    top: 500px;
 }
 
-.swiper-container2 {
-    
-    
-    
-}
+.swiper-container {}
+
+.swiper-container2 {}
 
 .swiper-container3 {
     float: left;
     position: absolute;
     left: 300px;
     top: 2200px;
-    
-    width:640px;
-    height:420px;
-    
-    
+    width: 640px;
+    height: 420px;
 }
 
 .swiper-slide {
-    
-    
-    display:flex;  
-    align-items:left; 
-    justify-content:left; 
+    display: flex;
+    align-items: left;
+    justify-content: left;
 }
 
 .text1 {
-    
-    font-size: 15px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    text-align: right;
-    
-    
+    text-align: left;
 }
 
 .text2 {
-    
-    font-size: 15px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    text-align: right;
-    
-    
-    
+    text-align: left;
 }
 
 .text3 {
-    
     font-size: 25px;
     color: rgb(0, 0, 0);
     text-align: left;
-    position: absolute; 
+    position: absolute;
     left: 1000px;
-    top:2250px;
+    top: 2250px;
 }
 
 @font-face {
@@ -138,7 +113,9 @@ video {
     src: url("./EliceDigitalBaeumOTF_Bold.otf");
 }
 
-.p{font-family: "My Font1",serif;}
+.p {
+    font-family: "My Font1", serif;
+}
 
 @font-face {
     font-family: 'Eulyoo1945-SemiBold';
@@ -147,5 +124,6 @@ video {
     font-style: normal;
 }
 
-.p1{font-family: "Eulyoo1945-SemiBold",serif;}
-
+.p1 {
+    font-family: "Eulyoo1945-SemiBold", serif;
+}
