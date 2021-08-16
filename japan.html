@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛멋쉼 여행사 - 일본</title>
+
+
+    <!-- sm. 참조될 라이브러리들(css)  -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- swiper(탭슬라이드용 css) -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- 커스텀 CSS(KH) 폰트 여기다가 적용시켜놨음 -->
+    <link rel="stylesheet" href="css/customKH.css">
+    <!-- sm. 참조될 라이브러리들(css)  -->
+</head>
+<body>
+    <header>
+        <article class="title">
+            <h1 class="animate__animated animate__fadeInDown">
+                일  본
+            </h1>
+            <div class="animate__animated animate__fadeInDown" id="fst">
+                잔잔한 아날로그 감성
+            </div>
+            <div class="animate__animated animate__fadeInDown" id="sec">
+                독창적인 문화가 공존하는 곳으로
+            </div>
+        </article>
+    </header>
+    
+    <!-- KH.탭컨텐츠 사진, 간단한 소개글 -->
+    <section class="mainContents">
+        <!-- KH.탭컨텐츠 -->
+        <article class="tabSlide animate__animated animate__fadeInLeft">
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <input type="radio" name="slide" id="slide05">
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- KH.슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/히메지성.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img class="kyoto"src="./img/japan/교토.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/analog.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/오다이바 빅사이트.jfif">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="./img/japan/여기 어디더라.jpg">
+                            </a>
+                        </li>
+
+                        <!-- KH.좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide05" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide04" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide05" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide04" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- KH.페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide01"></label></li>
+                        <li><label for="slide02"></label></li>
+                        <li><label for="slide03"></label></li>
+                        <li><label for="slide04"></label></li>
+                        <li><label for="slide05"></label></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </article>
+        
+        <!-- KH.본문 -->
+        <article class="mainTextBox animate__animated animate__fadeInRight">
+            <div class="mainText">
+                일본은 한국에서 거리상으로도 가까우며, 가장 쉽고 편하게 즐길 수 있는 여행지입니다. <br>
+                일본어를 하나도 몰라도, 여행 경험이 전혀 없더라도 조금만 준비한다면 쾌적한 여행이 가능한 까닭이기
+                때문입니다.
+            </div>
+        </article>
+    </section>
+
+    <!-- KH.맛멋쉼 메뉴(a태그 스크롤) -->
+    <section class="id_linkMenu">
+        <div class="btn-group me-lg btn-group-lg" role="group" aria-label="Threebtns">
+            <button type="button" class="btn btn-light">맛</button>
+            <button type="button" class="btn btn-light">멋</button>
+            <button type="button" class="btn btn-light">쉼</button>
+        </div>
+    </section>
+    <!-- KH.나중에 js로 화면 작아질때 버튼도 작아지게 (노멀사이즈로) -->
+
+    <!-- KH.맛,멋,쉼의 틀은 공유하되, 컨텐츠는 달리해도 됩니다. 자기만의 색깔을 넣으셔도 되는데, 전체적인 분위기와 화합되는 한도 내였으면 합니다. -->
+
+    <!-- KH.맛(사진, 본문) -->
+    <section class="tastPage container-fluid">
+        <div class="tasteTitle col-md-12">맛</div>
+        <!-- KH.첫번째 본문 -->
+        <!-- KH.Osaka -->
+        <article class="Osaka row">
+
+            <div class="col-md-1"></div>
+
+            <div class="OsakaPicture col-md-5">
+                <div>도톤보리</div>
+                <img src="img/japan/taste/오사카_도톤보리.png" alt="도톤보리">
+            </div>
+
+            <div class="OsakaText col-md-5">
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+            </div>
+
+            <div class="col-md-1"></div>
+
+        </article>
+
+        <article class="Convenience_Store row">
+
+            <div class="col-md-1"></div>
+            
+            <div class="Convenience_StoreText col-md-5">
+                맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+            </div>
+
+            <div class="Convenience_StorePicture col-md-5">
+                <div>편의점 음식</div>
+                <div><img src="img/japan/taste/편의점 음식.jfif" alt=""></div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+        </article>
+
+
+    </section>
+
+
+    <!----------------------------- KH.멋 ---------------------------->
+    <section class="smartnessPage">
+        <section class="smartnessPage container-fluid">
+            <div class="smartnessTitle col-md-12">멋</div>
+            <!-- KH.첫번째 본문 -->
+            <!-- KH.Osaka -->
+            <article class="notthing row">
+
+                <div class="col-md-1"></div>
+
+                <div class="notthingPicture col-md-5">
+                    <div>notthing</div>
+                    <img src="img/japan/taste/오사카_도톤보리.png" alt="notthing">
+                </div>
+
+                <div class="notthingText col-md-5">
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                    오사카는 맛있는게 많습니다 히힝 개조아용 오호홍😋개조아
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </article>
+
+            <article class="nottthing1 row">
+
+                <div class="col-md-1"></div>
+
+                <div class="notthing1Text col-md-5">
+                    맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                    맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                    맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                    맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                    맛있는 편의점 음식 너무 좋아용 다음에 또 먹고싶어용 오호홍 <br>
+                </div>
+
+                <div class="notthing1Picture col-md-5">
+                    <div>notthing1</div>
+                    <div><img src="img/japan/taste/편의점 음식.jfif" alt="notthing1"></div>
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </article>
+    </section>
+
+    <!-- KH.쉼 -->
+    <section class="restPage">
+        
+    </section>
+
+    <!-- KH.마지막에 뭐 카피라이트 어쩌고저쩌고 여행사 전화번호 이메일 어쩌고저쩌고 대충 찾아봐야징 -->
+    <footer>
+
+    </footer>
+
+    
+    <!-- sm. 참조될 라이브러리들(js)  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- KH.탭슬라이드 써야하니 swiper 참조 -->
+    <script src="js/swiper.js"></script>
+    <!-- sm. 참조될 라이브러리들(js)  -->
+</body>
+</html>

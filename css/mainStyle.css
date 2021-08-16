@@ -20,28 +20,116 @@ body {
   z-index: -100;
 }
 
+/* KH. 햄버거메뉴 */
+
+.righttop {
+  position: absolute;
+  top: 7%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+input[id="menuicon"] {
+  display: none;
+}
+
+input[id="menuicon"]+label {
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* KH. bar 하나하나 설정 */
+
+input[id="menuicon"]+label span {
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.884);
+  transition: all .35s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+  bottom: 0;
+}
+
+/* KH. 체크박스 체크되면 바뀌는 애니메이션 */
+
+input[id="menuicon"]:checked+label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* KH. 메인로고 */
+
 .mainlogo {
   position: absolute;
   left: 0;
   bottom: 0;
-  animation-delay: 1s;
+  animation-delay: 1.3s;
 }
+
+/* ---------- KH. fadeInleft 커스텀 ------------- */
+
+@keyframes fadeInLeftMain {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInLeftMain {
+  -webkit-animation-name: fadeInLeftMain;
+  animation-name: fadeInLeftMain;
+}
+/* ---------- KH. fadeInleft 커스텀 ------------- */
 
 .mainlogo img {
   display: block;
   width: 95%;
 }
 
-.rightlogo {
+.Leftlogo {
+  animation-delay: .5s;
   position: absolute;
   left:0 ;
   top: 0;
 }
-.rightlogo img {
+.Leftlogo img {
   width: 80%;
 }
 
 .rightText {
+  animation-delay: 2s;
   position: absolute;
   right: 5%;
   bottom: 1%;

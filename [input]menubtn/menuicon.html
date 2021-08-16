@@ -1,0 +1,53 @@
+<style>
+.righttop {
+	position:absolute;
+	top: 7%;
+	right: 1%;
+	transform:translate(-50%,-50%);
+}
+input[id="menuicon"] {
+	display:none;
+}
+input[id="menuicon"] + label {
+	display:block;
+	width:60px;
+	height:40px;
+	position:relative;
+	cursor:pointer;
+}
+input[id="menuicon"] + label span {
+	display:block;position:absolute;
+	width:100%;height:5px;
+	border-radius:30px;
+	background:#000;transition:all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} 
+
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+
+/* KH. 체크박스 체크되면 바뀌는 애니메이션*/
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+	top:50%;
+	transform:translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2) {
+	opacity:0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+	bottom:50%;
+	transform:translateY(50%) rotate(-45deg);
+}
+
+</style>
+
+<div class="righttop">
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+	<span></span>
+	<span></span>
+	<span></span>
+</label>
+</div>
