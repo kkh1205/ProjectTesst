@@ -1,6 +1,5 @@
 
 
-
 //sm. 슬라이드 이미지 작동 스크립트(swiper)
   var swiper = new Swiper('.swiper-container', {
     pagination: {
@@ -120,3 +119,57 @@ $(window).scroll(function(){//스크롤 움직이는거 감지해서 펑션 작�
 
 
 });
+
+
+//sm. 구글 맵 api 적용 스크립트
+
+var map1;
+var map2;
+var map3;
+var mat
+var mut
+var sim
+//sm. 맛 지도 시작
+function initMap() {
+  mat = { lat: 33.48870197603407 ,lng: 126.3890200975562 }; //위도 경도
+  map1 = new google.maps.Map( document.getElementById('matmap'), {  //구글맵 매핑, div id matmap 추적
+      zoom: 16,//확대 정도(높을수록 더확대함)
+      center: mat
+    });
+
+    new google.maps.Marker({ //마커 추가
+      position: mat,
+      map: map1,
+      label: "사는맛 먹는맛"
+    });
+  }
+  
+// //sm. 멋 지도 시작
+//   function initMap2() {
+//     mut = { lat: 33.42440647844738 ,lng: 126.93108954074859 }; //위도 경도 33.42440647844738, 126.93108954074859
+//     map2 = new google.maps.Map( document.getElementById('mutmap'), {  //구글맵 매핑, div id matmap 추적
+//         zoom: 16,//확대 정도(높을수록 더확대함)
+//         center: mat
+//       });
+  
+//       new google.maps.Marker({ //마커 추가
+//         position: mat,
+//         map: map1,
+//         label: "섭지코지"
+//       });
+//     }
+    
+// // sm. 쉼 지도 시작
+//     function initMap3() {
+//       sim = { lat: 33.484791678069215 ,lng: 126.3926991739755 }; //위도 경도 33.484791678069215, 126.3926991739755
+//       map3 = new google.maps.Map( document.getElementById('simmap'), {  //구글맵 매핑, div id matmap 추적
+//           zoom: 16,//확대 정도(높을수록 더확대함)
+//           center: mat
+//         });
+    
+//         new google.maps.Marker({ //마커 추가
+//           position: mat,
+//           map: map1,
+//           label: "아마빌레"
+//         });
+//   }
