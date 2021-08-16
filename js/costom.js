@@ -1,3 +1,6 @@
+
+
+
 //sm. 슬라이드 이미지 작동 스크립트(swiper)
   var swiper = new Swiper('.swiper-container', {
     pagination: {
@@ -45,7 +48,7 @@ $(window).scroll(function(){//스크롤 움직이는거 감지해서 펑션 작�
   var scrollPosition = $(window).scrollTop(); //스크롤값 가져오기
 
 
-  //여기서부터는 스크롤 내리면 나타내는 효과들
+  //sm.여기서부터는 스크롤 내리면 나타내는 효과들
   if(scrollPosition >= 200){//스크롤값 200이상이면 페이드인업 해서 애니메이션 작동
     //ex. movingtasteBox('맛' 이라고 적혀있는 상자)의 id를 검색해서 그 id에 속한 class를 애니메이션이 들어가있는 class로 변경해버림
     document.getElementById('movingtasteBox').className = 'container-fluid row animate__animated animate__fadeInUp';
