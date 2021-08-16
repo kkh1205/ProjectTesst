@@ -19,7 +19,7 @@ p {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -55,3 +55,31 @@ h2 {
     height: 70px;
     background-color: aliceblue;
 }
+
+/* 스크롤 이벤트 아직 이해 안됨 시작*/
+.container {
+    margin: 20px;
+  }
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+.list .up-on-scroll {
+    margin-top: 20px;
+    transition: transform 0.7s, opacity 1s;
+  }
+.img-wrap {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 400px;
+  }
+.img-wrap .image {
+    object-fit: contain;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* 스크롤 이벤트 아직 이해 안됨 */
