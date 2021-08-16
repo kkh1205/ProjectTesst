@@ -17,6 +17,7 @@ body {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
+  z-index: -100;
 }
 
 .mainlogo {
@@ -29,5 +30,32 @@ body {
 .mainlogo img {
   display: block;
   width: 95%;
+}
+
+.rightlogo {
+  position: absolute;
+  left:0 ;
+  top: 0;
+}
+.rightlogo img {
+  width: 80%;
+}
+
+.rightText {
+  position: absolute;
+  right: 10%;
+  bottom: 1%;
+}
+
+.rightText img {
+  width: 25%;
+  display: inline-block;
+}
+
+#footertext {
+  float: left;
+  display: inline-block;
+  color: rgb(202, 202, 202);
+  font-size: .7em;
 }
 
