@@ -362,3 +362,67 @@ section {
   text-align: center;
   margin-top: 10em;
 }
+
+/* --------- 맛 끝 ---------- */
+
+/* KH.멋 첫번째 틀 */
+.smartnessTitle {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 6vw;
+}
+
+/* KH.*** 사진 */
+.notthingPicture {
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.notthingPicture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1em;
+}
+
+/*  KH.*** 텍스트 */
+.notthingText {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 10em;
+}
+
+/* KH.&&& 틀*/
+.notthing1 {
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* KH.&&& 음식 사진 */
+.notthing1Picture {
+  position: relative;
+  overflow: auto;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.notthing1Picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1em;
+}
+
+/* KH.&&& 음식 텍스트 */
+.notthing1Text {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 10em;
+}

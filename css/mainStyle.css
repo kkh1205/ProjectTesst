@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Eulyoo1945-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* KH.폰트적용부분 */
+  font-family: Eulyoo1945-SemiBold;
+}
+
+.video-frame {
+
+}
+.video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mainlogo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-delay: 1s;
+}
+
+.mainlogo img {
+  display: block;
+  width: 95%;
+}
+
