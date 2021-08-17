@@ -56,7 +56,7 @@ h2 {
     background-color: aliceblue;
 }
 
-/* 스크롤 이벤트 아직 이해 안됨 시작*/
+/* 스크롤 이벤트 시작*/
 .container {
     margin: 20px;
   }
@@ -65,11 +65,11 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
   }
-.list .up-on-scroll {
+.list .up-on-scroll {                                /*본문 이거 사용*/
     margin-top: 20px;
     transition: transform 0.7s, opacity 1s;
   }
-.img-wrap {
+.img-wrap {                                         /*이미지는 이거 사용*/
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -82,4 +82,4 @@ h2 {
     width: 100%;
   }
 
-  /* 스크롤 이벤트 아직 이해 안됨 */
+  /* 스크롤 이벤트 끝 */

@@ -18,7 +18,7 @@
 /* input에 체크되면 슬라이드 효과 */
 .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
 .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-102%);}
-.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-210%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-205%);}
 
 /* input에 체크되면 텍스트 효과 */
 .section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
