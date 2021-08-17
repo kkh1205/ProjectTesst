@@ -1,0 +1,35 @@
+/* 스크롤 이벤트 시작*/
+.container {
+    margin: 10px;
+  }
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  } 
+
+.list .up-on-scroll {                              
+    margin-top: 20px;
+    transition: transform 0.7s, opacity 1s;
+  }
+
+  
+.up-on-scroll {                                /*본문 이거 사용*/
+    margin-top: 20px;
+    transition: transform 0.7s, opacity 1s;
+  }
+
+.img-wrap {                                    /*이미지는 이거 사용*/
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 400px;
+  }
+.img-wrap .image {
+    object-fit: contain;
+    max-width: 500px;
+    width: 100%;
+  }
+
+/* 스크롤 이벤트 끝 */

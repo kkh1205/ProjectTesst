@@ -8,13 +8,11 @@ body {
     font-family: "cafe";
 }
 
-h1 {
-    
+h1 {    
     font-size: 70px;
 }
 
 p {
-
     font-size: 40px;
 }
 
@@ -38,8 +36,7 @@ h2 {
     display: inline-block;
     width: 70px;
     height: 70px;
-    background-color: tan;
-  
+    background-color: tan; 
 }
 
 .box3 {
@@ -57,29 +54,12 @@ h2 {
 }
 
 /* 스크롤 이벤트 시작*/
-.container {
-    margin: 20px;
-  }
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-.list .up-on-scroll {                                /*본문 이거 사용*/
-    margin-top: 20px;
-    transition: transform 0.7s, opacity 1s;
-  }
-.img-wrap {                                         /*이미지는 이거 사용*/
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    max-height: 400px;
-  }
-.img-wrap .image {
-    object-fit: contain;
-    max-width: 500px;
-    width: 100%;
+.up-on-scroll {                                /*본문 이거 사용*/
+    margin-top: 50px;
+    transition: transform 1.0s, opacity 1s;
   }
 
-  /* 스크롤 이벤트 끝 */
+
+
+
+/* 스크롤 이벤트 끝 */
