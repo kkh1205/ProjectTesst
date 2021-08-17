@@ -132,3 +132,107 @@ video {
 .p2{
     font-family: "MapoFlowerIsland" , serif;
 }
+
+/*!
+ * sm.햄버거 버튼용 css 라이브러리 작성 시작
+ */
+ /* html,body {
+
+    background-color: #FFFFFF;
+    font-family: Eulyoo1945-SemiBold;
+
+     height: 100%;
+ } 
+ body{
+   position: relative;
+ } */
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 200%;
+    max-width: 0px;
+
+    transition: 0.5s ease;
+    z-index: 500;
+    background-color: #88888842;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 600;
+    padding: 20px;
+    top: 4px;
+    right: 10px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+  }
+  
+  .burger-icon .burger-sticks {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+  }
+  
+  .burger-icon .burger-sticks:before,
+  .burger-icon .burger-sticks:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .burger-icon .burger-sticks:before {
+    top: 5px;
+  }
+  
+  .burger-icon .burger-sticks:after {
+    top: -5px;
+  }
+  
+  .burger-check {
+    display: none;
+  }
+  
+  .burger-check:checked~.menu {
+    max-width: 500px;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks {
+    background: transparent;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:before {
+    transform: rotate(-45deg);
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:after {
+    transform: rotate(45deg);
+  }
+  
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+    top: 0;
+  }
+/*!
+ * sm.햄버거 버튼용 css 라이브러리 작성 끝
+ */
+
+ /*!
+ * sm.슬라이더 이미지용 css
+ */
+ .list .up-on-scroll {
+   
+    transition: transform 0.7s, opacity 1s;
+  }

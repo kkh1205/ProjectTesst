@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/jhbackground.css">
-    <title></title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
-
+    
+    <title>맛멋쉼 여행사</title>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- sm. 참조될 라이브러리들(css)  -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jhbackground.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <!-- sm. 참조될 라이브러리들(css)  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!-- Link Swiper's CSS -->
@@ -26,41 +24,50 @@
 </head>
 
 <body>
+    <!-- 햄버거 메뉴적용 -->
+    <input class="burger-check" type="checkbox" id="burger-check"><label class="burger-icon" for="burger-check">
+        <span class="burger-sticks"></span>
+    </label>
+    <div class="menu">
+        <div style="width: 500px;"></div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block"></span>
+                <a class="navbar-brand p1" href="#"> 맛멋쉼 여행사 - 키르키즈 </a>
+                <div class="w-100 text-right"></div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- 햄버거 메뉴적용 -->
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+    <!-- 애니메이트 제목 -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-5 jb-text text-center animate__animated animate__fadeInDown" style="font-family: serif;">
                 <h1 style="font-size: 1.5cm;">Кыргыз Республикасы </h1>
-
             </div>
         </div>
         <div class="row">
             <div class="col-xs-5 jk-text text-center animate__animated animate__delay-1s animate__fadeInUp p1">
                 <h1 style="font-size: 1cm; "> 키르키즈스탄 </h1>
-
             </div>
         </div>
     </div>
+    <!-- 애니메이트 제목 -->
 
 
-
-    <!-- <div id="title1" class="container-fluid">
-    <div class="jb-text text-center animate__animated animate__fadeInDown" style="font-family: serif;">
-        <h1 style="font-size: 1.5cm;">Кыргыз Республикасы </h1>
-
-    </div>
-    <div class="jk-text text-center animate__animated animate__delay-1s animate__fadeInUp p1" >
-
-        <h1 style="font-size: 1cm; "> 키르키즈스탄  </h1>
-    </div>
-
-</div> -->
+    <!-- 플로팅 배너 -->
     <a href="#matpage"><button type="button" class="btn btn-info rp1 animate__animated animate__delay-2s animate__fadeInUp p1" style="font-size: 1cm;" >맛</button></a>
     <a href="#mutpage"><button type="button" class="btn btn-warning rp2 animate__animated animate__delay-2s animate__fadeInUp p1" style="font-size: 1cm;">멋</button></a>
     <a href="#shimpage"><button type="button" class="btn btn-success rp3 animate__animated animate__delay-2s animate__fadeInUp p1" style="font-size: 1cm;">쉼</button></a>
-
+    <!-- 플로팅 배너 -->
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -68,174 +75,142 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
 
-    <!-- 맛 부분 이미지, 그림 jh -->
-    <a id="matpage">
-    <div class="container-fluid" >
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ></div>
+    <!-- 스크롤에 따른 페이드인 페이지 적용 -->
+    <div class="container">
+        <div class="list">
+         
+            <!-- 맛 부분 이미지, 그림 jh -->
+            <a id="matpage">
+                <div class="container-fluid" >
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                            <div id="matimage" class="swiper-container animate__animated animate__delay-2s animate__fadeInLeft">
+                                <div class="swiper-wrapper">                         
+                                    <div class="swiper-slide"><img class="img-fluid" src="img/beshbarmakmat.jpg"></div>
+                                    <div class="swiper-slide"><img class="img-fluid" src="img/kebabmat.jpg"></div>
+                                    <div class="swiper-slide"><img class="img-fluid" src="img/shropowmat.jpg"></div>
+                                    <div class="swiper-slide"><img class="img-fluid" src="img/mat1.jpg"></div>
+                                    <div class="swiper-slide"><img class="img-fluid" src="img/mat2.jpg"></div>                               
+                                </div>
+                                <p> &nbsp; </p>
+                                <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>                       
+                            </div>
+                        
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 " >
-
-                <div id="matimage" class="swiper-container animate__animated animate__delay-2s animate__fadeInLeft">
-                    <div class="swiper-wrapper">
-    
-                        <div class="swiper-slide"><img class="img-fluid" src="img/beshbarmakmat.jpg"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/kebabmat.jpg"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/shropowmat.jpg"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mat1.jpg"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mat2.jpg"></div>
-    
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <p>&nbsp;</p>
+                            <div class="text1 animate__animated animate__delay-2s animate__fadeInUp p2 ">
+                                <p style="text-align: center;">키르키즈스탄에서는 전통 빵을 주식으로 먹거나</p>
+                                <p style="text-align: center;">양고기를 이용한 샤슬릭을 먹습니다</p>
+                                <p style="text-align: center;"> &nbsp; </p>
+                                <p style="text-align: center;">제가 정말 맛있게 먹었던건 샤슬릭인데요</p>
+                                <p style="text-align: center;"> &nbsp; </p>
+                                <p style="text-align: center;">양고기와 각종 채소등을 꼬지에 끼워</p>
+                                <p style="text-align: center;">직화로 굽는데 고기가 큼직하니</p>
+                                <p style="text-align: center;">제 사이즈로 딱 이였습니다</p>           
+                            </div>             
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12;"></div>
                     </div>
-                    <p> &nbsp; </p>
-                    <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>
-    
                 </div>
-    
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                
-                <p>&nbsp;</p>
-                <div class="text1 animate__animated animate__delay-2s animate__fadeInUp p2 ">
-                    
-    
-                    <p style="text-align: center;">키르키즈스탄에서는 전통 빵을 주식으로 먹거나</p>
-                    <p style="text-align: center;">양고기를 이용한 샤슬릭을 먹습니다</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">제가 정말 맛있게 먹었던건 샤슬릭인데요</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">양고기와 각종 채소등을 꼬지에 끼워</p>
-                    <p style="text-align: center;">직화로 굽는데 고기가 큼직하니</p>
-                    <p style="text-align: center;">제 사이즈로 딱 이였습니다</p>
-    
-    
-    
-                </div>
-    
-    
-            </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12;">
-    
-                 </div>
-        </div>
-        <div class="row"></div>
-    </div>
+            </a>
+            <!-- 맛 부분 이미지, 그림 jh -->
 
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    </a>
-    <!-- 멋 부분 이미지, 그림 jh -->
-    <a id="mutpage">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <div class="text2 animate__animated animate__delay-2s animate__fadeInUp p2" >
-                    <p style="text-align: center;">키르키즈스탄은 우리나라와 비슷하면서도 </p>
-                    <p style="text-align: center;">산간지방과 넓은 초원이 있습니다 (양 : 앙 개꿀띠)</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">또한 수도인 비쉬케크에는 </p>
-                    <p style="text-align: center;">알라 토 광장이 있습니다</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">멋진 건축물들 갬성이 아주 좋아영</p>
-
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-10 col-xs-11">
-                <div id="matimage" class="swiper-container2 animate__animated animate__delay-2s animate__fadeInLeft">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mut3.jpg" style="float: none; margin: 0 auto;"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mut5.jpg" style="float: none; margin: 0 auto;"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mut4.jpg" style="float: none; margin: 0 auto;"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mut1.jpg" style="float: none; margin: 0 auto;"></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/mut2.PNG" style="float: none; margin: 0 auto;"></div>
-
+            <!-- 멋 부분 이미지, 그림 jh , 스크롤 페이드인-->
+            <article class="up-on-scroll">   
+                <a id="mutpage">
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                               <p>&nbsp;</p>
+                               <p>&nbsp;</p>
+                               <div class="text2 animate__animated animate__delay-2s animate__fadeInUp p2" >
+                                   <p style="text-align: center;">키르키즈스탄은 우리나라와 비슷하면서도 </p>
+                                   <p style="text-align: center;">산간지방과 넓은 초원이 있습니다 (양 : 앙 개꿀띠)</p>
+                                   <p style="text-align: center;"> &nbsp; </p>
+                                   <p style="text-align: center;">또한 수도인 비쉬케크에는 </p>
+                                   <p style="text-align: center;">알라 토 광장이 있습니다</p>
+                                   <p style="text-align: center;"> &nbsp; </p>
+                                   <p style="text-align: center;">멋진 건축물들 갬성이 아주 좋아영</p>
+                               </div>
+                           </div>
+                           <div class="col-lg-6 col-md-12 col-sm-10 col-xs-11">
+                               <div id="matimage" class="swiper-container2 animate__animated animate__delay-2s animate__fadeInLeft">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/mut3.jpg" style="float: none; margin: 0 auto;"></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/mut5.jpg" style="float: none; margin: 0 auto;"></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/mut4.jpg" style="float: none; margin: 0 auto;"></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/mut1.jpg" style="float: none; margin: 0 auto;"></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/mut2.PNG" style="float: none; margin: 0 auto;"></div>
+                                    </div>
+                                   <p> &nbsp; </p>
+                                   <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>
+                                </div>
+                           </div>
+                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                        </div>
                     </div>
-                    <p> &nbsp; </p>
-                    <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>
+                </a>
+            </article>
+            <!-- 멋 부분 이미지, 그림 jh , 스크롤 페이드인-->
 
-                </div>
-
-
-
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            </div>
-        </div>
-        <div class="row"></div>
-    </div>
-
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-
-
-
-    </a>
-    <!-- 쉼 부분 이미지, 그림 jh -->
-    <a id="shimpage">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-
-                <div id="matimage" class="swiper-container3 animate__animated animate__delay-2s animate__fadeInLeft">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm.jpg"  style="float: none; margin: 0 auto;" ></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm2.jpg"  style="float: none; margin: 0 auto;" ></div>
-                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm3.jpg"  style="float: none; margin: 0 auto;" ></div>
-                      
-
-                    </div>
-                    <p> &nbsp; </p>
-                    <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>
-
-                </div>
-
-                
-
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-10 col-xs-11">
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                
-                <div class="text3 animate__animated animate__delay-2s animate__fadeInUp p2">
-                    <p style="text-align: center;">키르키즈스탄은 본래 유목생활을 </p>
-                    <p style="text-align: center;">해오면서 터전을 가꾸었습니다 (양 : 앙 살려줘)</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">수도에는 이렇게크게 시장이 형성 되어있습니다</p>
-                    <p style="text-align: center;"> &nbsp; </p>
-                    <p style="text-align: center;">또한 우리나라와 비교해서 평지기준 700m 정도 차이가 나기때문에</p>
-                    <p style="text-align: center;">공기가 정말 맑습니다</p>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
             
-                </div>
-
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-            </div>
+            <!-- 쉼 부분 이미지, 그림 jh , 스크롤 페이드인--->
+            <article class="up-on-scroll">
+                 <a id="shimpage">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                <div id="matimage" class="swiper-container3 animate__animated animate__delay-2s animate__fadeInLeft">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm.jpg"   style="float: none; margin: 0 auto;" ></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm2.jpg"  style="float: none; margin: 0 auto;" ></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="img/sarm3.jpg"  style="float: none; margin: 0 auto;" ></div>
+                                    </div>
+                                    <p> &nbsp; </p>
+                                    <h5 style="text-align: center;">이미지를 클릭한 채로 옆으로 스윙!</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-10 col-xs-11">
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <div class="text3 animate__animated animate__delay-2s animate__fadeInUp p2">
+                                    <p style="text-align: center;">키르키즈스탄은 본래 유목생활을 </p>
+                                    <p style="text-align: center;">해오면서 터전을 가꾸었습니다 (양 : 앙 살려줘)</p>
+                                    <p style="text-align: center;"> &nbsp; </p>
+                                    <p style="text-align: center;">수도에는 이렇게크게 시장이 형성 되어있습니다</p>
+                                    <p style="text-align: center;"> &nbsp; </p>
+                                    <p style="text-align: center;">또한 우리나라와 비교해서 평지기준 700m 정도 차이가 나기때문에</p>
+                                    <p style="text-align: center;">공기가 정말 맑습니다</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                 </a>
+            </article>
+            <!-- 쉼 부분 이미지, 그림 jh , 스크롤 페이드인--->
         </div>
-        <div class="row"></div>
     </div>
-    </a>
-
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -247,15 +222,6 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-
-
-
-
-
-    
-
-
-
 
     <script>
         new Swiper('.swiper-container', {
@@ -311,6 +277,7 @@
     <!-- sm. 참조될 라이브러리들(js)  -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/isElementunderBottom.js"></script>
     <!-- sm. 참조될 라이브러리들(js)  -->
 </body>
 
